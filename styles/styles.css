@@ -1,0 +1,287 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+/////////////////////////////////////////////////////////////*/
+
+
+/* /////////////////
+ 0 Imports
+ /////////////// */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Poppins, serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0 30px 0;
+
+}
+
+footer {
+
+}
+
+/*kleuren grijs #899CA0 en donkergroen #1C2B32*/
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+
+h1, h2, h3 {
+    font-family: Poppins, serif;
+    font-weight: 500;
+    color: #1C2B32;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight:500;
+    color: #1C2B32;
+    margin-bottom:20px;
+}
+
+a {
+    color: #899CA0;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #899CA0;
+    text-decoration: none;
+}
+
+
+
+/*////////////////  3. Areas ////////////*/
+
+
+
+/*///////////// 3.1 Header /////////////*/
+
+
+.wrapper-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0 400px 0;
+}
+
+.featured-title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.featured-form {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px;
+    border-style: none;
+
+}
+
+.input-domain-check {
+    background-color: transparent;
+    font-family: Poppins, serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: #1C2B32;
+    border: 2px #1C2B32; /*waarom krijg ik geen border!?*/
+    padding: 8px 36px;
+    border-radius: 50px 0 0 50px;
+    min-width: 300px;
+}
+
+.input-domain-check::placeholder {
+    color: #1C2B32;
+    border: 2px #1C2B32;
+}
+
+.button-submit {
+    background-color: #1C2B32;
+    font-family: Poppins, serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+    border: 1px #1C2B32 ;
+    padding: 8px 36px;
+    border-radius: 0 50px 50px 0;
+    margin-left: -8px;
+}
+
+/*///////////// 3.2 Testimonial /////////////*/
+
+.wrapper-testimonials {
+    margin: 30px auto;
+    background-color:white;
+    padding: 30px 80px;
+    box-shadow: 10px 10px 10px 10px rgba(137,156,160,1);
+    border-radius: 5px;
+}
+
+figure {
+    position: relative;
+    text-align:left;
+    padding: 40px;
+    border: 1px solid green;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 44px;
+    position:absolute;
+    top:0;
+    left:0;
+
+}
+.avatar {
+    border-radius: 50%;
+    width: 44px;
+    position:absolute;
+    top:0;
+    left:80px;
+}
+
+figcaption {
+    position:absolute;
+    top:0;
+    left:60px;
+    padding-left: 10px;
+}
+
+figcaption cite {
+    /*waarom blijft dit blokje tekst zo smal? */
+    position:absolute;
+    top:0;
+    left:60px;
+    padding-left: 20px;
+    border: 1px solid red;
+
+}
+
+/*///////////// 3.3 Support /////////////*/
+
+.wrapper-support {
+    margin: 30px auto;
+    text-align: center;
+    padding: 60px 0 30px 0;
+}
+
+.image-rounded {
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+picture p {
+    text-align:left;
+    text-indent: 20px;
+}
+
+.support-section {
+    display:inline-block;
+    width: 100%;
+    margin-top:20px;
+    margin-left:20px;
+    text-align:left;
+}
+
+.button-support {
+    background-color: #1C2B32;
+    font-family: Poppins, serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+    border: 1px #1C2B32 ;
+    padding: 8px 36px;
+    border-radius: 50px;
+}
+
+.button-support:hover {
+    background-color: #899CA0;
+    font-family: Poppins, serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: white;
+    border: 1px #899CA0 ;
+    padding: 8px 36px;
+    border-radius: 50px;
+}
+
+
+
+/*///////////// 3.4 Faq /////////////*/
+
+.wrapper-faq {
+    margin: 30px auto;
+    text-align: center;
+    padding: 60px 0 30px 0;
+}
+
+details > summary {
+    line-height:45px;
+    cursor: pointer;
+}
+
+details {
+    text-align:left;
+    font-family: Poppins, serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+details > p {
+    border-radius: 20px;
+    background-color: #899CA0;
+    color:white;
+    padding: 30px;
+    margin: 30px;
+
+}
+/*///////////// 3.5 Footer /////////////*/
+
+footer {
+    margin-top:100px;
+    background-color: #1C2B32;
+    color:white;
+    position:sticky;
+    padding: 30px;
+}
+
+footer p {
+   font-size: 10px;
+    text-align:center;
+}
